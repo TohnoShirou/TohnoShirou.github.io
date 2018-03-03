@@ -8,14 +8,17 @@
 
 body {
   font-family: Merienda Droid serif;
-  background-image: url("https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27459244_1666235630104672_4453876628877325814_n.jpg?oh=82a443b7811e45b275782a803e2701c1&oe=5B145544");
+  background-image: url("https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27459244_1666235630104672_4453876628877325814_n.jpg?oh=82a443b7811e45b275782a803e2701c1&oe=5B145544", transparent);
+  background-image:radial-gradient(circle, #a340d0, white, purple);
+
+
   padding-top: 54px;
 }
 
 @media (min-width: 992px) {
   body {
     font-family: Merienda Droid serif;
-    background-image: url("https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27459244_1666235630104672_4453876628877325814_n.jpg?oh=82a443b7811e45b275782a803e2701c1&oe=5B145544");
+    background-image:linear-gradient(purple, #a340d0);
     padding-top: 56px;
   }
 }
@@ -42,7 +45,7 @@ body {
 #header {
   height: auto;
   width: 100%;
-border: 10px solid black;
+border: 10px solid #a340d0;
 position: relative;
 box-sizing: border-box;
 background-origin: box;
@@ -129,7 +132,7 @@ width: 0.1fr;
   border: 5px black solid;
   /*grid-template-columns: repeat(, 1fr);*/
   /*grid-auto-flow: column;*/
-  border-radius: 15px;
+  border-radius: 25px;
   justify-items: center;
   align-items: center;
   text-align: center;
@@ -170,4 +173,9 @@ font-family: Merienda;
 a {
     text-decoration: none;
     color: black;
+}
+
+.shadow {
+  text-shadow: 10px, 10px, 20px, rgb(0,0,0,1);
+  box-shadow: 10px, 10px, 20px, rgb(0,0,0,1);
 }
